@@ -21,7 +21,10 @@ class GitProjectAdapter : RecyclerView.Adapter<GitProjectVH>() {
         holder.bind(getItem(position))
     }
 
-    private fun getItem(pos:Int): GitProjectEntity = data[pos]
+    private fun getItem(pos:Int): GitProjectEntity= data[pos]
+
 
     override fun getItemCount(): Int = data.size
+
+
 }

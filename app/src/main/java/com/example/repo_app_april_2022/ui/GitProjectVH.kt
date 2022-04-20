@@ -7,7 +7,7 @@ import coil.load
 import com.example.repo_app_april_2022.R
 import com.example.repo_app_april_2022.databinding.ItemGitProjectBinding
 import com.example.repo_app_april_2022.domain.GitProjectEntity
-
+import com.example.repo_app_april_2022.domain.GitUserEntity
 
 
 class GitProjectVH(private val binding:ItemGitProjectBinding) :RecyclerView.ViewHolder(binding.root) {
@@ -21,9 +21,11 @@ class GitProjectVH(private val binding:ItemGitProjectBinding) :RecyclerView.View
 
 
     fun bind(item: GitProjectEntity) {
-        binding.itemGitRepoId.text = item.id.toString()
-        binding.itemGitRepoName.text = item.name
-        binding.itemImageView.load(R.drawable.cat_3)
+
+        binding.itemGitRepoId.text = item.fact.id.toString()
+        binding.itemGitRepoName.text = item.fact.name
+        binding.itemGitRepoDescription.text = item.fact.description
+        binding.itemImageView.load(item.fact.avatar_url)
 
 
     }
