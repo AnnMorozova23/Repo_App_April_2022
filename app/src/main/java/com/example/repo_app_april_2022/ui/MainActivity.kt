@@ -2,7 +2,6 @@ package com.example.repo_app_april_2022.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Toast
 import androidx.activity.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.repo_app_april_2022.app
@@ -11,7 +10,7 @@ import com.example.repo_app_april_2022.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
-    private val viewModel: RepoViewModel by viewModels{RepoViewModelFactory(app.gitProjectRepo)}
+    private val viewModel: RepoViewModel by viewModels { RepoViewModelFactory(app.gitProjectRepo) }
     private val adapter = GitProjectAdapter()
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -24,13 +23,12 @@ class MainActivity : AppCompatActivity() {
         initView()
 
 
-
     }
 
     private fun initView() {
-        binding.recyclerViw.layoutManager = LinearLayoutManager(this)
+        binding.recyclerView.layoutManager = LinearLayoutManager(this)
         adapter.setHasStableIds(true)
-        binding.recyclerViw.adapter = adapter
+        binding.recyclerView.adapter = adapter
     }
 
     private fun initViewModelEvent() {
@@ -41,8 +39,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun initViewEvent() {
-        binding.searchGitBtn.setOnClickListener {
-            val username = binding.editLoginText.text.toString()
+        binding.searchButton.setOnClickListener {
+            val username = binding.loginEditText.text.toString()
             viewModel.onShowRepos(username)
         }
     }

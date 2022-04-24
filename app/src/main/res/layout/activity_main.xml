@@ -14,14 +14,14 @@
         android:orientation="horizontal">
 
         <androidx.appcompat.widget.AppCompatEditText
-            android:id="@+id/edit_login_text"
+            android:id="@+id/login_edit_text"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="3"
             android:text="@string/annmorozova23" />
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/search_git_btn"
+            android:id="@+id/search_button"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -29,7 +29,7 @@
     </LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerViw"
+        android:id="@+id/recycler_view"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_margin="@dimen/margin_8_dp" />

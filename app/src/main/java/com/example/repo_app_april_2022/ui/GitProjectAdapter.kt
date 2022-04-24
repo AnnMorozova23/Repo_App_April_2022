@@ -2,13 +2,13 @@ package com.example.repo_app_april_2022.ui
 
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.repo_app_april_2022.domain.GitProjectEntity
+import com.example.repo_app_april_2022.domain.GitHubUser
 
 class GitProjectAdapter : RecyclerView.Adapter<GitProjectVH>() {
-    private var data: List<GitProjectEntity> = emptyList()
+    private var data: List<GitHubUser> = emptyList()
 
 
-    fun setData(repos: List<GitProjectEntity>) {
+    fun setData(repos: List<GitHubUser>) {
         data = repos
         notifyDataSetChanged()
     }
@@ -21,7 +21,7 @@ class GitProjectAdapter : RecyclerView.Adapter<GitProjectVH>() {
         holder.bind(getItem(position))
     }
 
-    private fun getItem(pos:Int): GitProjectEntity= data[pos]
+    private fun getItem(pos: Int): GitHubUser = data[pos]
 
 
     override fun getItemCount(): Int = data.size

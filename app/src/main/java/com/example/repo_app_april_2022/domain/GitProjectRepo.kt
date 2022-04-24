@@ -4,5 +4,5 @@ import io.reactivex.rxjava3.core.Single
 
 interface GitProjectRepo {
 
-    fun observerReposForUsers(username:String): Single<List<GitProjectEntity>>
+    fun getUserRepositories(username:String): Single<List<GitHubUser>>
 }
