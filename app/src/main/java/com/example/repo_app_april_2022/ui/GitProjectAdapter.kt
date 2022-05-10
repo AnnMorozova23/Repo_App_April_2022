@@ -2,7 +2,7 @@ package com.example.repo_app_april_2022.ui
 
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.repo_app_april_2022.domain.GitHubUser
+import com.example.repo_app_april_2022.domain.entity.GitHubUser
 
 class GitProjectAdapter : RecyclerView.Adapter<GitProjectVH>() {
     private var data: List<GitHubUser> = emptyList()

@@ -1,11 +1,13 @@
 package com.example.repo_app_april_2022.ui
-
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.repo_app_april_2022.app
 import com.example.repo_app_april_2022.databinding.ActivityMainBinding
+import com.example.repo_app_april_2022.ui.GitProjectAdapter
+import com.example.repo_app_april_2022.ui.RepoViewModel
+import com.example.repo_app_april_2022.ui.RepoViewModelFactory
 
 
 class MainActivity : AppCompatActivity() {
@@ -40,8 +42,8 @@ class MainActivity : AppCompatActivity() {
 
     private fun initViewEvent() {
         binding.searchButton.setOnClickListener {
-            val username = binding.loginEditText.text.toString()
-            viewModel.onShowRepos(username)
+            val user = binding.loginEditText.text.toString()
+            viewModel.onShowRepos(user)
         }
     }
 }
