@@ -1,4 +1,4 @@
-package com.example.repo_app_april_2022.ui
+package com.example.repo_app_april_2022.ui.FragmentMain
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
