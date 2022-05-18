@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">Repo_App_April_2022</string>
+    <string name="enter_login_git">Enter login Git</string>
+    <string name="annmorozova23">AnnMorozova23</string>
+    <string name="search">Search</string>
 </resources>
