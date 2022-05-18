@@ -1,9 +1,10 @@
-package com.example.repo_app_april_2022.ui
+package com.example.repo_app_april_2022.ui.FragmentMain
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import coil.load
+import com.example.repo_app_april_2022.data.DTO.GitHubUserDTO
 import com.example.repo_app_april_2022.databinding.ItemGitProjectBinding
 import com.example.repo_app_april_2022.domain.entity.GitHubUser
 

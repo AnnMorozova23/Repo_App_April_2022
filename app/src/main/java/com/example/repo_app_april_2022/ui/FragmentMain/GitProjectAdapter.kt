@@ -1,4 +1,4 @@
-package com.example.repo_app_april_2022.ui
+package com.example.repo_app_april_2022.ui.FragmentMain
 
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
